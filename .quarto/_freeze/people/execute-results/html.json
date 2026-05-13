@@ -1,0 +1,15 @@
+{
+  "hash": "fc63644e2d3f5eafac1c9ebef4486b16",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nexecute:\n  echo: false\n  output: true\n  eval: true\n---\n\nPeople working in this area\n\n\n::: {.cell}\n\n:::\n\n\n## Current\n\n -  [**Claudia Fassino**](https://dima.unige.it/Claudia.Fassino@unige.it), Researcher at University of Genova. [Email](mailto:Claudia.Fassino@unige.it).\n -  [**Eva Riccomagno**](https://dima.unige.it/Eva.Riccomagno@unige.it), Ordinary Professor at University of Genova. [Email](mailto:Eva.Riccomagno@unige.it).\n -  [**Francesco Porro**](https://dima.unige.it/Francesco.Porro@unige.it), Associate Professor at University of Genova. [Email](mailto:Francesco.Porro@unige.it).\n -  [**Sara Sommariva**](https://dima.unige.it/Sara.Sommariva@unige.it), Researcher at University of Genova. [Email](mailto:Sara.Sommariva@unige.it).\n -  [**Muhammad Shoaib**](https://dima.unige.it/Muhammad.Shoaib@edu.unige.it), PhD student at University of Genova. [Email](mailto:Muhammad.Shoaib@edu.unige.it).\n -  [**Marco Bressan**](https://dima.unige.it/Marco.Bressan@edu.unige.it), PhD student at University of Genova. [Email](mailto:Marco.Bressan@edu.unige.it).\n -  [**Stefano Braccini**](https://dima.unige.it/5597473@studenti.unige.it), Research fellow at University of Genova. [Email](mailto:5597473@studenti.unige.it).\n\n\n## Former\n\n\n -  **Maria Piera Rogantin**.\n -  **Ivano Repetto**.\n -  **Federico Carli**, Axpo Italia.\n -  **Elena Pesce**, AXA XL.\n -  **Giacomo Siri**, Dompé.\n -  **Eleonora Saggini**, Math Teacher at Gastaldi-Abba.\n -  **Virginia Pirino**, senior analytics specialist at Costa Crociere.\n -  **Piotr Zwiernik**, associate professor at Toronto University.\n -  **Gherardo Varando**.\n -  **Giacomo Lancia**, post-doc at Università La Sapienza, Roma.\n -  **Giulia Bertagnolli**, Jr Assistant Professor at Free University of Bozen-Bolzano.\n -  **Jack Storror Carter**, Utopia Fellow Universitat Pompeu Fabra.\n -  **Orlando Marigliano**, Marie Skłodowska-Curie Fellow, post-doc Chalmers at Gothemburg.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

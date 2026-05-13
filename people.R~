@@ -1,0 +1,62 @@
+smig.person <- function (first, last, dima = !former, phd = FALSE, former = FALSE,
+                         role = if (phd) "PhD student",
+                         affiliation = if (dima) "University of Genova",
+                         email,
+                         website = if (dima) sprintf("https://dima.unige.it/%s", email),
+                         comment = NULL) {
+  if (missing(email))
+    email = if (dima) sprintf("%s.%s@%sunige.it", first, last,
+                              if (phd) "edu." else "")
+  c(first = first, last = last, former = former, role = role, affiliation = affiliation,
+    email = email, website = website, comment = comment)
+}
+
+format.smig.person <- function(p) {
+  affil.str <- ""
+  if (!is.na(p["affiliation"])) {
+    if (!is.na(p["role"]))
+      affil.str <- paste(p[c("role", "affiliation")], collapse = " - ")
+    else
+      affil.str <- p["affiliation"]
+  }
+  nm <- paste(p["first"], p["last"])
+  if (!is.na(p["website"]))
+    nm <- sprintf("[%s](%s)", nm, p["website"])
+  paste0(nm,
+         if (nzchar(affil.str)) sprintf(", %s", affil.str), ".",
+         if (!is.na(p["email"])) sprintf(" [Email](mailto:%s).", p["email"]))
+}
+
+people = list(
+  smig.person("Claudia", "Fassino", role = "Researcher"),
+  smig.person("Eva", "Riccomagno", role = "Ordinary Professor"),
+  smig.person("Francesco", "Porro", role = "Associate Professor"),
+  smig.person("Sara", "Sommariva", role = "Researcher"),
+  smig.person("Muhammad", "Shoaib", phd = TRUE),
+  smig.person("Marco", "Bressan", phd = TRUE),
+  smig.person("Stefano", "Braccini", role = "Research fellow",
+              email = "5597473@studenti.unige.it"),
+  smig.person("Maria Piera", "Rogantin", former = TRUE),
+  smig.person("Ivano", "Repetto", former = TRUE),
+  smig.person("Federico", "Carli", affiliation = "Axpo Italia",  former = TRUE),
+  smig.person("Elena", "Pesce", affiliation = "AXA XL",  former = TRUE),
+  smig.person("Giacomo", "Siri", affiliation = "Dompé",  former = TRUE),
+  smig.person("Eleonora", "Saggini", role = "Math Teacher",
+              affiliation = "Gastaldi-Abba",  former = TRUE),
+  smig.person("Virginia", "Pirino", role = "senior analytics specialist",
+              affiliation = "Costa Crociere",  former = TRUE),
+  smig.person("Piotr", "Zwiernik", role = "associate professor",
+              affiliation = "Toronto University",  former = TRUE),
+  smig.person("Gherardo", "Varando", former = TRUE),
+  smig.person("Giacomo", "Lancia", role = "post-doc",
+              affiliation = "Università La Sapienza, Roma",  former = TRUE),
+  smig.person("Giulia", "Bertagnolli", role = "Jr Assistant Professor",
+              affiliation = "Free University of Bozen-Bolzano",  former = TRUE),
+  smig.person("Jack Storror", "Carter",
+              affiliation = "Utopia Fellow Universitat Pompeu Fabra", former = TRUE),
+  smig.person("Orlando", "Marigliano",
+              role = "Marie Skłodowska-Curie Fellow, post-doc Chalmers",
+              affiliation = "Gothemburg",  former = TRUE)
+)
+former.idx <- which(unname(sapply(people, \(x) x["former"] == "TRUE")))
+people

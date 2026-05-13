@@ -1,0 +1,56 @@
+{
+  "about.qmd": {
+    "about.html": "9c018ee5"
+  },
+  "events.qmd": {
+    "events.html": "c31bd526"
+  },
+  "index.qmd": {
+    "index.html": "94dde23f"
+  },
+  "news/2024-03-01-seminar-bertagnolli/index.qmd": {
+    "index.html": "373a2b23"
+  },
+  "news/2024-03-26-seminar-lancia.qmd": {
+    "2024-03-26-seminar-lancia.html": "dc891f76"
+  },
+  "news/2024-04-24-seminar-sommariva/index.qmd": {
+    "index.html": "a36c3cdd"
+  },
+  "news/2024-05-14-sis-genova/index.qmd": {
+    "index.html": "af728e09"
+  },
+  "news/2024-10-21-gis/2024-10-21-gis.qmd": {
+    "2024-10-21-gis.html": "a487ab62"
+  },
+  "news/2025-12-03-statup/2025-12-03-statup.qmd": {
+    "2025-12-03-statup.html": "69ff796a"
+  },
+  "news/2026-02-28-SMID25/2026-SMID25.qmd": {
+    "2026-SMID25.html": "0818d7ca"
+  },
+  "news/ig-short-course.qmd": {
+    "ig-short-course.html": "c9d8ec60"
+  },
+  "news/trees4cat.qmd": {
+    "trees4cat.html": "2706adbb"
+  },
+  "other.qmd": {
+    "other.html": "788309bc"
+  },
+  "people.qmd": {
+    "people.html": "ab6600c5"
+  },
+  "publications.qmd": {
+    "publications.html": "66e53dec"
+  },
+  "research.qmd": {
+    "research.html": "225fa6bd"
+  },
+  "teaching.qmd": {
+    "teaching.html": "b240685c"
+  },
+  "news/2026-05-14-giudici/2026-05-14-giudici.qmd": {
+    "2026-05-14-giudici.html": "764e0200"
+  }
+}
